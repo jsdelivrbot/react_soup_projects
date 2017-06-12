@@ -1,3 +1,6 @@
 .gitignore
 .idea/
 /redux_adv_app/node_modules/
+/redux_adv_app/npm-debug.log
+/react_simple_starter/node_modules/
+/redux_simple_starter/node_modules/
