@@ -8,7 +8,7 @@ class PostsNew extends Component {
         return (
             <form>
                 <Field name="title" label="Title for Post" component={this.renderField}/>
-                <Field name="tags" label="Tags" component={this.renderField}/>
+                <Field name="categories" label="Categories" component={this.renderField}/>
                 <Field name="content" label="Post Content" component={this.renderField}/>
             </form>
         );
@@ -26,7 +26,10 @@ class PostsNew extends Component {
             </div>
         );
     }
+}
+
+function validate() {
 
 }
 
-export default reduxForm({form: 'PostsNewForm'})(PostsNew);
+export default reduxForm({validate, form: 'PostsNewForm'})(PostsNew);
